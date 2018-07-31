@@ -8,3 +8,6 @@
 [1、加载动画](https://j4kjjq12jw.codesandbox.io/m-loading)
 
 [2、分页](https://j4kjjq12jw.codesandbox.io/pagination)
+
+[3、轮播图](https://8x9ww4mlj2.codesandbox.io/swiper)
+
