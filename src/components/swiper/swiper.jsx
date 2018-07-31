@@ -38,10 +38,18 @@ export default class Swiper extends React.Component {
         ? this.state.swiperOptions.textColor
         : this.state.textColor
     });
+    if (this.props.swiperOptions.autoPlay) {
+      this.autoSwiper();
+    }
+  }
+  componentWillUnmount() {
+    if (this.props.swiperOptions.autoPlay) {
+      clearInterval(this.state.interval);
+    }
   }
   swiperLeft(isClick) {
     if (isClick) {
-      clearInterval(this.interval);
+      clearInterval(this.state.interval);
     }
     for (let i = 0; i < this.state.swiperList.length; i++) {
       let itemIndex = "swiper-item-" + i;
