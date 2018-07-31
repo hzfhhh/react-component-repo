@@ -1,0 +1,67 @@
+.swiper {
+  position: relative;
+  margin: auto;
+}
+.swiper .swiper-left {
+  position: absolute;
+  left: -65px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 50px;
+  height: 166px;
+}
+.swiper .swiper-right {
+  position: absolute;
+  right: -65px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
+  width: 50px;
+  height: 166px;
+}
+.swiper .allow:hover {
+  background-color: #d2d6da;
+}
+.swiper .swiper-content {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: #243a56;
+  box-shadow: 0 0 30px #f1eded;
+  position: relative;
+  overflow: hidden;
+}
+.swiper .swiper-content .swiper-item {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transform: scale(1);
+  transition: all 0.5s linear;
+}
+.swiper .swiper-content .swiper-item .swiper-img {
+  height: 100%;
+  width: 100%;
+}
+.swiper .swiper-content .swiper-item .dot-left {
+  position: absolute;
+  top: 53px;
+  left: 210px;
+}
+.swiper .swiper-content .swiper-item .dot-right {
+  position: absolute;
+  bottom: 53px;
+  right: 37px;
+}
+.swiper .swiper-content .swiper-item .text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  margin: auto;
+  color: #101010;
+}
